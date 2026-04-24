@@ -10,9 +10,9 @@ import numpy as np
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from d1_hand_gym_env import DexterousHandEnv
-from sac import SACAgent
-from replay_buffer import ReplayBuffer
+from embodied_rl_hand.envs.hand_env import DexterousHandEnv
+from embodied_rl_hand.algorithms.sac import SACAgent
+from embodied_rl_hand.algorithms.replay_buffer import ReplayBuffer
 
 
 def evaluate(agent, env, episodes=5, max_eval_steps=1000):
