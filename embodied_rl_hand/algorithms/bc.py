@@ -2,6 +2,10 @@
 D3 Step 2: Behavior Cloning 训练与评估
 运行: cd src && python bc_train.py
 """
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 import torch
 import torch.nn as nn
 import torch.optim as optim

@@ -2,6 +2,10 @@
 D3 Step 3: 极简 Diffusion Policy 推理 Demo
 运行: cd src && python diffusion_policy_mini.py
 """
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 import torch
 import torch.nn as nn
 import numpy as np

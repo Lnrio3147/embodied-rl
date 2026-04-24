@@ -2,6 +2,10 @@
 D3 Step 1: 用 D2 的 SAC 生成专家轨迹
 运行: cd src && python collect_expert_data.py
 """
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 import torch
 import numpy as np
 from embodied_rl_hand.envs.hand_env import DexterousHandEnv
